@@ -8,17 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.barkleylabs.com/beap/blastoff.git"
+    "url": "https://github.com/smacpherson64/blastoff.git"
   },
   "keywords": [
-    "init"
+    "blastoff", "asset", "manager"
   ],
+  "preferGlobal" : "true",
+  "bin": {
+      "simple": "index.js"
+  },
   "author": "Patrick Little",
   "license": "",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/smacpherson64/blastoff/issues"
   },
-  "homepage": "https://stash.barkleylabs.com/projects/BEAP/repos/blastoff/browse/readme.md",
+  "homepage": "https://github.com/smacpherson64/blastoff",
   "devDependencies": {
     "clean-css": "^3.0.10",
     "gulp-autoprefixer": "^2.1.0",
