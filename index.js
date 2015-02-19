@@ -4,6 +4,7 @@ var color = require('colors'),
     fs = require("fs"),
     path = require("path"),
     rsync = require("rsync");
+    asciiMessage = require("./asciiMessages");
 
 var args = process.argv.slice(2);
 
@@ -20,18 +21,17 @@ if (typeof(args[0]) == "undefined" || args[0] == "help") {
 } else {
     if (args[0].toLowerCase() === "launch") {
 
-        process.stdout.write('\033c');
-
-        console.log('Launching Blastoff');
-
-
         function countdown(number) {
             if (number > 0) {
+                process.stdout.write('\033c');
+                console.log('Launching Blastoff');
                 console.log(number + '...');
                 setTimeout(function() {countdown(--number)}, 500);
             } else {
                 (function() {
+                    process.stdout.write('\033c');
                     copy();
+                    console.log(asciiMessage.complete.red);
                 })();
             }
         }
@@ -47,11 +47,12 @@ if (typeof(args[0]) == "undefined" || args[0] == "help") {
                 if (err) {
                     console.error(err);
                 }
-                console.log('Blastoff has completed: '.green + cmd);
+                console.log('Blastoff has Launched'.green);
             });
         }
 
         setTimeout(function(){ countdown(5) }, 500);
 
     }
+
 }
