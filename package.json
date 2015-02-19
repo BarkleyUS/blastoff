@@ -11,11 +11,13 @@
     "url": "https://github.com/smacpherson64/blastoff.git"
   },
   "keywords": [
-    "blastoff", "asset", "manager"
+    "blastoff",
+    "asset",
+    "manager"
   ],
-  "preferGlobal" : "true",
+  "preferGlobal": "true",
   "bin": {
-      "simple": "index.js"
+    "blastoff": "index.js"
   },
   "author": "Patrick Little",
   "license": "",
@@ -25,6 +27,7 @@
   "homepage": "https://github.com/smacpherson64/blastoff",
   "devDependencies": {
     "clean-css": "^3.0.10",
+    "color": "^0.7.3",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-concat": "^2.4.3",
     "gulp-csscomb": "^3.0.3",
