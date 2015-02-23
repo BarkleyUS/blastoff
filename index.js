@@ -10,5 +10,7 @@ if (typeof(args[0]) == "undefined" || args[0] == "help") {
     if (args[0].toLowerCase() === "launch") {
         actions.launch();
     }
-
+    if (args[0].toLowerCase() === "go" || args[0].toLowerCase() === "watch" ) {
+        actions.go();
+    }
 }

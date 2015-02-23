@@ -1,4 +1,7 @@
-# OSX
+# OSX - CACHE AND THUMBNAILS
 .DS_Store
 .Trashes
 ._*
+
+# WINDOWS - CACHE AND THUMBNAILS
+Thumbs.db
