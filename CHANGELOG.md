@@ -1,3 +1,6 @@
+##0.1.3 - Minor Logic Update
+* Updated Display Help Menu Logic
+
 ##0.1.2 - Adding Windows Functionality
 * Fixing Copy Function to work on Windows
 * Cleaning up and commenting code
