@@ -1,0 +1,18 @@
+{
+  "name": "Vendor Includes",
+  "version": "0.0.0",
+  "homepage": "none",
+  "authors": [
+    "BarkleyUS"
+  ],
+  "description": "Vendor Includes using Bower",
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
