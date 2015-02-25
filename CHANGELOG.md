@@ -1,3 +1,11 @@
+##0.1.5 - Bug fixes and various Updates
+* Fixed bug where UNIX was unable to launch
+* Added Sitemaps to CSS and JS files
+
+
+##0.1.4 - Windows Environment Preparer Update
+* Added BATCH file to auto install dependencies
+
 ##0.1.3 - Minor Logic Update
 * Updated Display Help Menu Logic
 

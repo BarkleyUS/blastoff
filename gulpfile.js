@@ -17,9 +17,10 @@ var assetsDir = process.env.GULP_PATH;
 gulp.task( 'js', function(){
 	gulp.src( ['!' + assetsDir + 'js/*.min.js', assetsDir + 'js/*.js'])
 		.pipe( plumber() )
-		.pipe( gulp.dest( assetsDir + 'js/' ) )
 		.pipe( rename({suffix:'.min'}) )
+		.pipe( sourcemaps.init() )
 		.pipe( uglify({warnings: true}) )
+		.pipe( sourcemaps.write())
 		.pipe( gulp.dest( assetsDir + 'js/' ) );
 });
 
