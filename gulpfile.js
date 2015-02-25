@@ -12,10 +12,15 @@ var gulp = require('gulp'),
 // BASE ASSET DIRECTORY
 var assetsDir = process.env.GULP_PATH;
 
+var assets = {
+	js: [assetsDir + "js/*.js", '!' + assetsDir + 'js/*.min.js'],
+	sass: [assetsDir + "sass/**/*"]
+}
+
 
 // JAVASCRIPT
 gulp.task( 'js', function(){
-	gulp.src( ['!' + assetsDir + 'js/*.min.js', assetsDir + 'js/*.js'])
+	gulp.src( assets.js )
 		.pipe( plumber() )
 		.pipe( rename({suffix:'.min'}) )
 		.pipe( sourcemaps.init() )
@@ -38,11 +43,11 @@ gulp.task( 'sass', function(){
 
 
 // GULP WATCH
-gulp.task( 'watch', function(){
-	gulp.watch( assetsDir + 'js/*.js', ['js'] );
-	gulp.watch( assetsDir + 'sass/**/*.scss', ['sass'] );
+gulp.task( 'watchAll', function(){
+	watch( assets.js, function() { gulp.run('js') } );
+	watch( assets.sass, function() { gulp.run('sass') } );
 });
 
 
 // DEFAULT TASK - keep watch at end of array
-gulp.task( 'default', [ 'js', 'sass', 'watch' ] );
+gulp.task( 'default', [ 'js', 'sass', 'watchAll' ] );

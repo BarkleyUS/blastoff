@@ -3,8 +3,11 @@
 #### VITAL
 
 * FIX NEEDED - JS and SASS maps are currently in the file need to point them to sources instead so overhead is not in the file
-* FIX NEEDED - Need to update GULP watch after new files or deleted currently it does not watch newly added files
 * DOCUMENTATION - Need to update the README.md file to have updated information
+
+#### SOON
+
+* FIX NEEDED - gulp.run() (Used by gulp-watch) is depreciated
 
 #### POSSIBLE
 

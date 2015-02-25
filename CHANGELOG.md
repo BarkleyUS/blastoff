@@ -1,3 +1,6 @@
+##0.1.6 - Using gulp-watch instead of gulp.watch
+* gulp.watch currently does not watch new files so changed to use gulp-watch instead
+
 ##0.1.5 - Bug fixes and various Updates
 * Fixed bug where UNIX was unable to launch
 * Added Sitemaps to CSS and JS files
