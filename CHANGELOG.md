@@ -1,3 +1,7 @@
+##0.1.7 - Updating SASS comments, Removing Default CSS
+* Minor changes to SASS comments
+* Removed css from default-structure
+
 ##0.1.6 - Using gulp-watch instead of gulp.watch
 * gulp.watch currently does not watch new files so changed to use gulp-watch instead
 
