@@ -13,8 +13,15 @@ var gulp = require('gulp'),
 var assetsDir = process.env.GULP_PATH;
 
 var assets = {
-	js: [assetsDir + "js/*.js", '!' + assetsDir + 'js/*.min.js'],
-	sass: [assetsDir + "sass/**/*"]
+	js: [
+		assetsDir + "js/*.js",
+		'!' + assetsDir + 'js/*.min.js',
+		'!' + assetsDir + 'js/*.map'
+	],
+	sass: {
+		all: [assetsDir + "sass/**/*"],
+		main: [assetsDir + 'sass/*.scss']
+	}
 }
 
 
@@ -22,22 +29,22 @@ var assets = {
 gulp.task( 'js', function(){
 	gulp.src( assets.js )
 		.pipe( plumber() )
-		.pipe( rename({suffix:'.min'}) )
 		.pipe( sourcemaps.init() )
 		.pipe( uglify({warnings: true}) )
-		.pipe( sourcemaps.write())
+		.pipe( rename({suffix:'.min'}) )
+		.pipe( sourcemaps.write('.'))
 		.pipe( gulp.dest( assetsDir + 'js/' ) );
 });
 
 
 // BUILD SASS (SCSS)
 gulp.task( 'sass', function(){
-	gulp.src( [assetsDir + 'sass/screen.scss', assetsDir + 'sass/ie.scss', assetsDir + 'sass/print.scss'])
+	gulp.src( assets.sass.main )
 		.pipe( plumber() )
 		.pipe( sourcemaps.init() )
 		.pipe( sass({outputStyle: 'compressed'}) )
-		.pipe( sourcemaps.write() )
 		.pipe( autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4', 'Firefox >= 4'))
+		.pipe( sourcemaps.write('.') )
 		.pipe( gulp.dest( assetsDir + 'css/' ) );
 });
 
@@ -45,7 +52,7 @@ gulp.task( 'sass', function(){
 // GULP WATCH
 gulp.task( 'watchAll', function(){
 	watch( assets.js, function() { gulp.run('js') } );
-	watch( assets.sass, function() { gulp.run('sass') } );
+	watch( assets.sass.all, function() { gulp.run('sass') } );
 });
 
 

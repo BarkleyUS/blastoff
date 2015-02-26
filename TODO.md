@@ -2,7 +2,6 @@
 
 #### VITAL
 
-* FIX NEEDED - JS and SASS maps are currently in the file need to point them to sources instead so overhead is not in the file
 * DOCUMENTATION - Need to update the README.md file to have updated information
 
 #### SOON

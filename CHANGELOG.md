@@ -1,3 +1,6 @@
+##0.1.8 - Moving MAP for SASS and JS to be external
+* Updated Sourcemaps to be external in gulpfile
+
 ##0.1.7 - Updating SASS comments, Removing Default CSS
 * Minor changes to SASS comments
 * Removed css from default-structure
