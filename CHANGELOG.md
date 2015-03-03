@@ -1,3 +1,6 @@
+##0.1.9 - Bug Fix
+* Bug fig for rsync with spaces and names
+
 ##0.1.8 - Moving MAP for SASS and JS to be external
 * Updated Sourcemaps to be external in gulpfile
 
