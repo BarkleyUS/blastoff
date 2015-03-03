@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/smacpherson64/blastoff.git"
+    "url": "https://github.com/BarkleyUS/blastoff.git"
   },
   "keywords": [
     "blastoff",
@@ -23,9 +23,9 @@
   "author": "Barkley",
   "license": "",
   "bugs": {
-    "url": "https://github.com/smacpherson64/blastoff/issues"
+    "url": "https://github.com/BarkleyUS/blastoff/issues"
   },
-  "homepage": "https://github.com/smacpherson64/blastoff",
+  "homepage": "https://github.com/BarkleyUS/blastoff",
   "dependencies": {
     "colors": "^1.0.3",
     "gulp": "^3.8.11",
