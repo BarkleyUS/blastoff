@@ -1,6 +1,6 @@
 {
   "name": "barkley-blastoff",
-  "version": "0.1.9",
+  "version": "1.9.10",
   "description": "Blastoff - Barkley Web Asset Manager",
   "main": "index.js",
   "scripts": {
