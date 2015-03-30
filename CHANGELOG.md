@@ -1,3 +1,7 @@
+##0.1.17 - Minor refactoring of code
+* Using path.exists for path checking instead of fs
+* Updating index.js to make it easier to understand
+
 ##0.1.16 - Changing init command and minor updates
 * Changed base command from launch to init
 * Added launch to list of start commands

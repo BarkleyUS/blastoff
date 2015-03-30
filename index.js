@@ -4,14 +4,17 @@ var actions = require('./lib/actions');
 
 var args = process.argv.slice(2);
 
+
 if (typeof(args[0]) != "undefined") {
-    if (args[0].toLowerCase() === "init") {
+    var cmd = args[0].toLowerCase();
+
+    if (cmd === "init") {
         if (args.join(' ').indexOf('--quick') === -1) {
             actions.init(false);
         } else {
             actions.init(true);
         }
-    } else if (args[0].toLowerCase() === "start" || args[0].toLowerCase() === "go" || args[0].toLowerCase() === "watch" || args[0].toLowerCase() === "launch") {
+    } else if (cmd === "start" || cmd === "go" || cmd === "launch") {
         actions.start();
     } else {
         actions.help();
