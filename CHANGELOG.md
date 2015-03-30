@@ -1,3 +1,10 @@
+##0.1.16 - Changing init command and minor updates
+* Changed base command from launch to init
+* Added launch to list of start commands
+* Updated README.md to match new command
+* Removed JS lib folder
+* Added plugins.js file
+
 ##0.1.14 - Addon Fix For Issue 1
 * https://github.com/BarkleyUS/blastoff/issues/1
 
