@@ -29,9 +29,9 @@ BlastOff works in the terminal. We're using Gulp.js to do the majority of our wo
 
 #How to use BlastOff
 
-Install BlastOff Globally 
+Install BlastOff globally 
 ```
-instructions to install blastof go here
+npm install barkley-blastoff -g
 ```
 
 Goto your project's directory
