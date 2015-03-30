@@ -2,7 +2,7 @@
 
 #### VITAL
 
-* DOCUMENTATION - Need to update the README.md file to have updated information
+* 
 
 #### SOON
 
