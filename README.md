@@ -1,13 +1,13 @@
 #BlastOff!
 
-BlastOff makes front end developement easier. We crammed a handful of modern web development tools into a single resource to help setup and manage up your project's assets.
+BlastOff makes front end development easier. We crammed a handful of modern web development tools into a single resource to help setup and manage up your project's assets.
 
 ##What does it do?
 First it creates your assets folder.
 ```
 assets/
 ```
-And folders to segragate files
+And folders to segregate files
 ```
 /css/
 /img/
@@ -21,7 +21,7 @@ Then it watches the folders for changes and runs scripts relative to those chang
 BlastOff works in the terminal. We're using Gulp.js to do the majority of our work for us.
 
 ###What is included:
-- Autoprefixer - Don't worry about prefixing css properies
+- Autoprefixer - Don't worry about prefixing css properties
 - SASS - Compiles and Compresses SASS files
 - Uglify - Compress JS files
 - Sourcemaps - Creates sourcemaps for CSS and JS files
@@ -29,7 +29,7 @@ BlastOff works in the terminal. We're using Gulp.js to do the majority of our wo
 
 #How to use BlastOff
 
-Install BlastOff globally 
+Install BlastOff globally
 ```
 npm install barkley-blastoff -g
 ```
@@ -41,7 +41,7 @@ cd /path_to_your_project/project_name/
 
 Initialize BlastOff on your project.
 ```
-blastoff launch
+blastoff init
 ```
 
 Start BlastOff
@@ -50,4 +50,3 @@ blastoff start
 ```
 
 Once BlastOff has started it will watch your assets folder for changes and report any errors in the terminal. Keep the terminal window open. To hop on a project that has already been initialized simply run 'blastoff start' from your project's root.
-
